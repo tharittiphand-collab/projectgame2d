@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=11 format=3 uid="uid://6shc68avrgoi"]
 
-[ext_resource type="Texture2D" uid="uid://dpuxsn0qa0en8" path="res://UI/label_middle.png" id="1_bkklk"]
-[ext_resource type="Texture2D" uid="uid://e8re81n85wrm" path="res://UI/9slice_box_white/lt_box_9slice_c.png" id="2_w74fg"]
-[ext_resource type="Texture2D" uid="uid://cw7nbkq3n6oxs" path="res://UI/9slice_box_white/dt_box_9slice_c.png" id="2_y027d"]
+[ext_resource type="Texture2D" uid="uid://dpuxsn0qa0en8" path="res://Ui/UI/label_middle.png" id="1_bkklk"]
+[ext_resource type="Texture2D" uid="uid://e8re81n85wrm" path="res://Ui/UI/9slice_box_white/lt_box_9slice_c.png" id="2_w74fg"]
+[ext_resource type="Texture2D" uid="uid://cw7nbkq3n6oxs" path="res://Ui/UI/9slice_box_white/dt_box_9slice_c.png" id="2_y027d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j04nu"]
 atlas = ExtResource("1_bkklk")
