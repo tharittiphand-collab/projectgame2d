@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://be125qthq55hk"]
 
 [ext_resource type="Theme" uid="uid://6shc68avrgoi" path="res://Ui/game_ui_theme.tres" id="1_4uaya"]
-[ext_resource type="Texture2D" uid="uid://4o4fhpcqqjuv" path="res://Ui/UI/shovel.png" id="2_u0t4t"]
+[ext_resource type="Texture2D" uid="uid://bblxf8vgl3ha6" path="res://Ui/shovel.png" id="2_u0t4t"]
 [ext_resource type="Script" uid="uid://clf0cwg0gb8c1" path="res://toolsmenu.gd" id="2_ucpt3"]
-[ext_resource type="Texture2D" uid="uid://dr7kgbgfw2jg5" path="res://Ui/UI/axe.png" id="3_sbcnj"]
-[ext_resource type="Texture2D" uid="uid://bpp1oxnlca8so" path="res://Ui/UI/water.png" id="4_vquh0"]
-[ext_resource type="Texture2D" uid="uid://cuqfilny0hq8s" path="res://Ui/UI/plant.png" id="5_ucpt3"]
+[ext_resource type="Texture2D" uid="uid://dwacq417eiy71" path="res://Ui/axe.png" id="3_sbcnj"]
+[ext_resource type="Texture2D" uid="uid://d38hha0aw48ow" path="res://Ui/water.png" id="4_vquh0"]
+[ext_resource type="Texture2D" uid="uid://c5snj2g6k8b3q" path="res://Ui/plant.png" id="5_ucpt3"]
 
 [node name="Toolsmenu" type="PanelContainer"]
 offset_right = 46.0
