@@ -1,7 +1,7 @@
 [gd_scene load_steps=105 format=3 uid="uid://5b64rnmvcnn"]
 
-[ext_resource type="Script" uid="uid://i5pp2jmqe6hh" path="res://Script/player.gd" id="1_y8w33"]
-[ext_resource type="Texture2D" uid="uid://cuteqwjo6nllr" path="res://SUNNYSIDE_WORLD_CHARACTERS_V0.3.1/CHARACTERS/ANIMATION/_ARCHIVE/spr_basecharacter_allframes.png" id="2_xa75v"]
+[ext_resource type="Script" uid="uid://i5pp2jmqe6hh" path="res://scripts/Script/player.gd" id="1_y8w33"]
+[ext_resource type="Texture2D" uid="uid://bq7wfeeocp1v3" path="res://Character/spr_basecharacter_allframes.png" id="2_xa75v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("2_xa75v")
