@@ -15,6 +15,10 @@ run/main_scene="uid://cfjviw6ad2opi"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[layer_names]
+
+2d_physics/layer_3="interactable"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
