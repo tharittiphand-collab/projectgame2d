@@ -18,7 +18,9 @@ func _on_physics_process(_delta : float) -> void:
 	elif Input.is_action_just_pressed("down"):
 		direction = Vector2.DOWN
 	else:
-		direction = Vector2.ZERO		
+		direction = Vector2.ZERO
+		
+	animated_sprite.play("idle")		
 func _on_next_transitions() -> void:
 	pass
 
