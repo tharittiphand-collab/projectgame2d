@@ -1,7 +1,7 @@
 [gd_resource type="TileSet" load_steps=6 format=3 uid="uid://bkagdolg43epb"]
 
-[ext_resource type="Texture2D" uid="uid://bjdog1f3ehsgn" path="res://asset/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden_House_Walls_Tilset.png" id="1_3tn6e"]
-[ext_resource type="Texture2D" uid="uid://rbheh6ofk8cb" path="res://asset/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Basic_Furniture.png" id="2_jgu7e"]
+[ext_resource type="Texture2D" uid="uid://bjdog1f3ehsgn" path="res://asset/Wooden_House_Walls_Tilset.png" id="1_3tn6e"]
+[ext_resource type="Texture2D" uid="uid://rbheh6ofk8cb" path="res://asset/Basic_Furniture.png" id="2_jgu7e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3tn6e"]
 texture = ExtResource("1_3tn6e")
