@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=4 uid="uid://cxliebkhhapad"]
 
 [ext_resource type="TileSet" uid="uid://cc5yr7i4xhesu" path="res://Tileset/game_tile_set.tres" id="1_8v004"]
-[ext_resource type="PackedScene" uid="uid://cfjviw6ad2opi" path="res://scenes/characters/chicken/chicken.tscn" id="2_6j6px"]
+[ext_resource type="PackedScene" uid="uid://b0eh36y88ee47" path="res://scenes/characters/chicken/chicken.tscn" id="2_6j6px"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_8v004"]
 vertices = PackedVector2Array(389.648, 118.203, 411.797, 169.602, 406.852, 223.211, 334.063, 224.938, 279.531, 199.906, 268.594, 156.148, 286.609, 120.117, 360.242, 109.219)

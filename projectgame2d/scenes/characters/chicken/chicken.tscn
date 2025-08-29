@@ -1,19 +1,10 @@
-<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/chicken.tscn
-[gd_scene load_steps=14 format=3 uid="uid://cfjviw6ad2opi"]
-=======
-[gd_scene load_steps=13 format=3 uid="uid://cfjviw6ad2opi"]
->>>>>>> Stashed changes:projectgame2d/chicken/chicken.tscn
+[gd_scene load_steps=14 format=3 uid="uid://b0eh36y88ee47"]
 
 [ext_resource type="Script" uid="uid://ejnhnod0ipsg" path="res://scenes/characters/chicken/chicken.gd" id="1_r6a33"]
 [ext_resource type="Texture2D" uid="uid://da3cjw7mk0ryb" path="res://asset/Chicken Sprites.png" id="1_sd5y8"]
 [ext_resource type="Script" uid="uid://vrnpm8x0mgd2" path="res://scripts/state_machine/node_state_machine.gd" id="2_lfvh4"]
-<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/chicken.tscn
 [ext_resource type="Script" uid="uid://cwbpbgi076k1t" path="res://scenes/characters/chicken/idle_state.gd" id="3_sdkux"]
-[ext_resource type="Script" uid="uid://c27w3ffp0d3uh" path="res://scenes/characters/chicken/walk_state.gd" id="4_sdkux"]
-=======
-[ext_resource type="Script" uid="uid://cwbpbgi076k1t" path="res://chicken/idle_state.gd" id="3_sdkux"]
-[ext_resource type="Script" uid="uid://cagvgnnvlyn86" path="res://chicken/walk_state.gd" id="4_sdkux"]
->>>>>>> Stashed changes:projectgame2d/chicken/chicken.tscn
+[ext_resource type="Script" path="res://scenes/characters/chicken/walk_state.gd" id="4_sdkux"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8uiii"]
 atlas = ExtResource("1_sd5y8")
@@ -81,11 +72,6 @@ position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_es2kq")
 animation = &"idle"
 autoplay = "idle"
-<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/chicken.tscn
-=======
-frame = 2
-frame_progress = 0.897513
->>>>>>> Stashed changes:projectgame2d/chicken/chicken.tscn
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)
@@ -104,15 +90,8 @@ script = ExtResource("3_sdkux")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
-<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/chicken.tscn
 [node name="Walk" type="Node" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d", "navigation_agent_2d")]
 script = ExtResource("4_sdkux")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 navigation_agent_2d = NodePath("../../NavigationAgent2D")
-=======
-[node name="Walk" type="Node" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d")]
-script = ExtResource("4_sdkux")
-character = NodePath("../..")
-animated_sprite_2d = NodePath("../../AnimatedSprite2D")
->>>>>>> Stashed changes:projectgame2d/chicken/chicken.tscn
