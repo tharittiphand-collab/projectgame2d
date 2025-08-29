@@ -1,5 +1,6 @@
 extends NodeState
 
+<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/walk_state.gd
 @export var character: NonPlayableCharacter
 @export var animated_sprite_2d: AnimatedSprite2D
 @export var navigation_agent_2d: NavigationAgent2D
@@ -23,12 +24,18 @@ func set_movement_target() -> void:
 	navigation_agent_2d.target_position = target_position
 	speed = randf_range(min_speed, max_speed)
 	
+=======
+
+@export var character: CharacterBody2D
+@export var animated_sprite_2d: AnimatedSprite2D
+>>>>>>> Stashed changes:projectgame2d/chicken/walk_state.gd
 
 func _on_process(_delta : float) -> void:
 	pass
 
 
 func _on_physics_process(_delta : float) -> void:
+<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/walk_state.gd
 	if navigation_agent_2d.is_navigation_finished():
 		character.current_walk_cycle += 1
 		set_movement_target()
@@ -56,11 +63,21 @@ func _on_next_transitions() -> void:
 	if character.current_walk_cycle == character.walk_cycles:
 		character.velocity = Vector2.ZERO
 		transition.emit("Idle")
+=======
+	pass
+
+
+func _on_next_transitions() -> void:
+	pass
+>>>>>>> Stashed changes:projectgame2d/chicken/walk_state.gd
 
 
 func _on_enter() -> void:
 	animated_sprite_2d.play("walk")
+<<<<<<< Updated upstream:projectgame2d/scenes/characters/chicken/walk_state.gd
 	character.current_walk_cycle = 0
+=======
+>>>>>>> Stashed changes:projectgame2d/chicken/walk_state.gd
 
 
 func _on_exit() -> void:
