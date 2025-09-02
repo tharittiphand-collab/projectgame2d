@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ckhk3pxweec1v"]
-
-[ext_resource type="Theme" uid="uid://6shc68avrgoi" path="res://Ui/game_ui_theme.tres" id="1_f0f1l"]
-
-[node name="PanelContainer" type="PanelContainer"]
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("1_f0f1l")
