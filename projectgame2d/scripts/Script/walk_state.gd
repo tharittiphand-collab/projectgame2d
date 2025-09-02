@@ -1,6 +1,6 @@
 extends NodeState
 
-@export var player: CharacterBody2D
+@export var player: Player
 @export var animated_sprite_2d: AnimatedSprite2D
 @export var speed: int = 50
 
@@ -15,7 +15,9 @@ func _on_physics_process(_delta: float) -> void:
 		animated_sprite_2d.play("walking")
 	else:
 		animated_sprite_2d.stop()
-
+	
+	if direction != Vector2.ZERO
+		player.player_direction = direction
 	player.velocity = direction * speed
 	player.move_and_slide()
 

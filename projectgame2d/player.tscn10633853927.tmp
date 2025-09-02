@@ -783,7 +783,9 @@ current_tool = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_c2etn")
-animation = &"idle"
+animation = &"chopping"
+frame = 6
+frame_progress = 0.705533
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-10, 6)
@@ -795,15 +797,14 @@ shape = SubResource("CapsuleShape2D_4flbx")
 script = ExtResource("3_hqtel")
 initial_node_state = NodePath("Idle")
 
-[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("animated_sprite_2d")]
+[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("Player")]
 script = ExtResource("4_sweqy")
-animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+Player = NodePath("../..")
 
 [node name="Walk" type="Node" parent="StateMachine" node_paths=PackedStringArray("player", "animated_sprite_2d")]
 script = ExtResource("5_sweqy")
 player = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
-speed = null
 
 [node name="Chopping" type="Node" parent="StateMachine" node_paths=PackedStringArray("player", "animated_sprite_2d", "hit_collision_shape")]
 script = ExtResource("6_2hs0m")
