@@ -1,0 +1,44 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://6shc68avrgoi"]
+
+[ext_resource type="Texture2D" uid="uid://3yl7jynog4lg" path="res://Ui/dt_box_9slice_c.png" id="1_8ftvy"]
+[ext_resource type="Texture2D" uid="uid://byjfcaewnqhmh" path="res://Ui/label_middle.png" id="1_5547x"]
+[ext_resource type="Texture2D" uid="uid://m3f3trm0v47s" path="res://Ui/lt_box_9slice_c.png" id="2_5547x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j04nu"]
+atlas = ExtResource("1_5547x")
+region = Rect2(0, 1, 16, 11)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w74fg"]
+texture = SubResource("AtlasTexture_j04nu")
+region_rect = Rect2(0, 0, 16.0413, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5f55m"]
+atlas = ExtResource("1_8ftvy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bj610"]
+texture = SubResource("AtlasTexture_5f55m")
+region_rect = Rect2(0, 0, 3, 3)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xjicm"]
+texture = SubResource("AtlasTexture_5f55m")
+region_rect = Rect2(0, 0, 3, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtvwx"]
+atlas = ExtResource("2_5547x")
+region = Rect2(0, 0, 3, 3)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5f55m"]
+texture = SubResource("AtlasTexture_qtvwx")
+region_rect = Rect2(0, 0, 3.01629, 3)
+
+[resource]
+DarkWoodPanel/base_type = &"PanelContainer"
+DarkWoodPanel/styles/panel = SubResource("StyleBoxTexture_w74fg")
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+ToolButton/base_type = &"Button"
+ToolButton/styles/focus = SubResource("StyleBoxTexture_bj610")
+ToolButton/styles/hover = SubResource("StyleBoxTexture_xjicm")
+ToolButton/styles/normal = SubResource("StyleBoxTexture_5f55m")
