@@ -1,0 +1,175 @@
+[gd_scene load_steps=20 format=3 uid="uid://cg708b46tpflv"]
+
+[ext_resource type="Theme" uid="uid://cu4aaumdpt78y" path="res://scenes/Ui/game_ui_theme.tres" id="1_ddxni"]
+[ext_resource type="Texture2D" uid="uid://oktc65s3ullj" path="res://asset/ui/Basic_tools_and_meterials.png" id="2_o8k4j"]
+[ext_resource type="Script" uid="uid://37wdfawmpxi8" path="res://scenes/Ui/inventory_panel.gd" id="2_uuylb"]
+[ext_resource type="Texture2D" uid="uid://cncgo5id6vas8" path="res://asset/ui/Basic_Plants.png" id="3_uuylb"]
+[ext_resource type="Texture2D" uid="uid://vaygryhks8ox" path="res://asset/ui/Egg_item.png" id="4_3rq0s"]
+[ext_resource type="Texture2D" uid="uid://b6n1si8dp0ac2" path="res://asset/ui/Simple_Milk_and_grass_item.png" id="5_y5t1a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3yqe"]
+atlas = ExtResource("2_o8k4j")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="FontFile" id="FontFile_rhv0y"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_j0pl6"]
+font = SubResource("FontFile_rhv0y")
+font_color = Color(0.212305, 0.212305, 0.212305, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqswp"]
+atlas = ExtResource("2_o8k4j")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="FontFile" id="FontFile_aoykv"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_43hek"]
+font = SubResource("FontFile_aoykv")
+font_color = Color(0.262932, 0.262932, 0.262932, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixcgb"]
+atlas = ExtResource("3_uuylb")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kwm1l"]
+font_color = Color(0.332881, 0.332881, 0.332881, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8vpy"]
+atlas = ExtResource("4_3rq0s")
+
+[sub_resource type="LabelSettings" id="LabelSettings_g16fn"]
+font_color = Color(0.277528, 0.277528, 0.277528, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxats"]
+atlas = ExtResource("5_y5t1a")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="FontFile" id="FontFile_c8fw8"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_74ock"]
+font = SubResource("FontFile_c8fw8")
+font_color = Color(0, 0, 0, 1)
+
+[node name="InventoryPanel" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ddxni")
+theme_type_variation = &"DarkWoodPanel"
+script = ExtResource("2_uuylb")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Logs" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Logs"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_t3yqe")
+
+[node name="LogsLabel" type="Label" parent="MarginContainer/VBoxContainer/Logs"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_j0pl6")
+
+[node name="Stone" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Stone"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_kqswp")
+
+[node name="StonesLabel" type="Label" parent="MarginContainer/VBoxContainer/Stone"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_43hek")
+
+[node name="Plant" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Plant"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_ixcgb")
+
+[node name="PlantsLabel" type="Label" parent="MarginContainer/VBoxContainer/Plant"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_kwm1l")
+
+[node name="Egg" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Egg"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_y8vpy")
+
+[node name="EggsLabel" type="Label" parent="MarginContainer/VBoxContainer/Egg"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_g16fn")
+
+[node name="Milk" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Milk"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_kxats")
+
+[node name="MilkLabel" type="Label" parent="MarginContainer/VBoxContainer/Milk"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_74ock")

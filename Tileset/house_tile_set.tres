@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=7 format=3 uid="uid://bkagdolg43epb"]
 
-[ext_resource type="Texture2D" uid="uid://bjdog1f3ehsgn" path="res://asset/Wooden_House_Walls_Tilset.png" id="1_3tn6e"]
+[ext_resource type="Texture2D" uid="uid://bjdog1f3ehsgn" path="res://asset/Tilesets/Wooden_House_Walls_Tilset.png" id="1_3tn6e"]
 [ext_resource type="Texture2D" uid="uid://rbheh6ofk8cb" path="res://asset/Basic_Furniture.png" id="2_jgu7e"]
 [ext_resource type="PackedScene" uid="uid://cfjc0gptyug62" path="res://scenes/houses/door.tscn" id="3_1odt2"]
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=4 uid="uid://ebj3j0tnmtdm"]
+[gd_scene load_steps=3 format=4 uid="uid://ebj3j0tnmtdm"]
 
 [ext_resource type="TileSet" uid="uid://cc5yr7i4xhesu" path="res://Tileset/game_tile_set.tres" id="1_1ebns"]
+[ext_resource type="PackedScene" uid="uid://5xtm78hen378" path="res://player.tscn" id="2_ggidf"]
 
 [node name="TestSceneNPCNavigation" type="Node2D"]
 
@@ -19,3 +20,5 @@ tile_set = ExtResource("1_1ebns")
 [node name="Nature" type="TileMapLayer" parent="GameTilemap"]
 position = Vector2(-28, -20)
 tile_set = ExtResource("1_1ebns")
+
+[node name="Player" parent="." instance=ExtResource("2_ggidf")]

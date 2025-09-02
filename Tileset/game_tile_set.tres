@@ -1,7 +1,7 @@
 [gd_resource type="TileSet" load_steps=12 format=3 uid="uid://cc5yr7i4xhesu"]
 
-[ext_resource type="Texture2D" uid="uid://c15k2wsatb3wo" path="res://asset/Water.png" id="1_7jh38"]
-[ext_resource type="Texture2D" uid="uid://dmht0ulebdd7" path="res://asset/Grass.png" id="2_c0fpt"]
+[ext_resource type="Texture2D" uid="uid://c15k2wsatb3wo" path="res://asset/Tilesets/Water.png" id="1_7jh38"]
+[ext_resource type="Texture2D" uid="uid://dmht0ulebdd7" path="res://asset/Tilesets/Grass.png" id="2_c0fpt"]
 [ext_resource type="Texture2D" uid="uid://b3oi0jh3bbp4c" path="res://asset/Basic_Grass_Biom_things.png" id="4_io5f5"]
 [ext_resource type="Texture2D" uid="uid://b35gr6mmswdap" path="res://asset/Tilesets/Fences.png" id="5_1qirt"]
 [ext_resource type="PackedScene" uid="uid://dyxeq7i54mbki" path="res://scenes/houses/large_house.tscn" id="5_fff2b"]

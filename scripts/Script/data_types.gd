@@ -3,7 +3,7 @@ class_name DataTypes
 enum Tools {
 	None,
 	Axe,
-	Shovel,
+	Tillground,
 	Watering,
 	Plant
 }
