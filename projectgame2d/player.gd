@@ -2,7 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 @export var current_tool: DataTypes. Tools = DataTypes. Tools.None
-@onready var hit_componet : HitComponent =$Hitcomponent
+@onready var hit_component : HitComponent =$Hitcomponent
 var player_direction: Vector2
 
 func _ready() -> void:
@@ -10,3 +10,4 @@ func _ready() -> void:
 
 func on_tool_selected(tool: DataTypes. Tools) -> void:
 	current_tool = tool
+	hit_component.current_tool = tool

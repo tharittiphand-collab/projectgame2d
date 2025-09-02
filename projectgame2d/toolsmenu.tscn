@@ -57,3 +57,6 @@ icon = ExtResource("5_ucpt3")
 icon_alignment = 1
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Shovel" to="." method="_on_shovel_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Axe" to="." method="_on_axe_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Watering" to="." method="_on_watering_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Plant" to="." method="_on_plant_pressed"]
