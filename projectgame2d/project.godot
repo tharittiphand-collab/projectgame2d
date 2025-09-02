@@ -15,6 +15,10 @@ run/main_scene="uid://cfjviw6ad2opi"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ToolManager="*res://scripts/Script/tool_manager.gd"
+
 [input]
 
 up={

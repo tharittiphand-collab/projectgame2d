@@ -1,6 +1,6 @@
 [gd_scene load_steps=108 format=3 uid="uid://b8vqt2dvk2fkn"]
 
-[ext_resource type="Script" uid="uid://i5pp2jmqe6hh" path="res://scripts/Script/player.gd" id="1_y8w33"]
+[ext_resource type="Script" uid="uid://b7yg4yrv1k48k" path="res://player.gd" id="1_sweqy"]
 [ext_resource type="Texture2D" uid="uid://bq7wfeeocp1v3" path="res://Character/spr_basecharacter_allframes.png" id="2_xa75v"]
 [ext_resource type="Script" uid="uid://vrnpm8x0mgd2" path="res://scripts/state_machine/node_state_machine.gd" id="3_hqtel"]
 [ext_resource type="Script" uid="uid://dy22pvl2kfran" path="res://scripts/Script/idle_state.gd" id="4_sweqy"]
@@ -770,7 +770,8 @@ height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(1.36, 1.16)
-script = ExtResource("1_y8w33")
+script = ExtResource("1_sweqy")
+current_tool = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_c2etn")
@@ -786,10 +787,11 @@ shape = SubResource("CapsuleShape2D_4flbx")
 script = ExtResource("3_hqtel")
 initial_node_state = NodePath("Idle")
 
-[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("Player", "animated_sprite")]
+[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("Player")]
 script = ExtResource("4_sweqy")
 Player = NodePath("../..")
-animated_sprite = NodePath("../../AnimatedSprite2D")
 
-[node name="walk" type="Node" parent="StateMachine"]
+[node name="Walk" type="Node" parent="StateMachine" node_paths=PackedStringArray("player", "animated_sprite_2d")]
 script = ExtResource("5_sweqy")
+player = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")

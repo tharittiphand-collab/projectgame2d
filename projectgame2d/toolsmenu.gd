@@ -6,4 +6,4 @@ extends PanelContainer
 @onready var plant: Button = $MarginContainer/HBoxContainer/Plant
 
 func _on_shovel_pressed() -> void:
-	pass # Replace with function body.
+	ToolManager.selected(DataTypes.Tools.Shovel)
