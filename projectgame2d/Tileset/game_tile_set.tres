@@ -1,8 +1,9 @@
-[gd_resource type="TileSet" load_steps=10 format=3 uid="uid://cc5yr7i4xhesu"]
+[gd_resource type="TileSet" load_steps=12 format=3 uid="uid://cc5yr7i4xhesu"]
 
 [ext_resource type="Texture2D" uid="uid://c15k2wsatb3wo" path="res://asset/Water.png" id="1_7jh38"]
 [ext_resource type="Texture2D" uid="uid://dmht0ulebdd7" path="res://asset/Grass.png" id="2_c0fpt"]
 [ext_resource type="Texture2D" uid="uid://b3oi0jh3bbp4c" path="res://asset/Basic_Grass_Biom_things.png" id="4_io5f5"]
+[ext_resource type="Texture2D" uid="uid://b35gr6mmswdap" path="res://asset/Tilesets/Fences.png" id="5_1qirt"]
 [ext_resource type="PackedScene" uid="uid://dyxeq7i54mbki" path="res://scenes/houses/large_house.tscn" id="5_fff2b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c0fpt"]
@@ -475,14 +476,100 @@ texture = ExtResource("4_io5f5")
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_io5f5"]
 scenes/1/scene = ExtResource("5_fff2b")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljitc"]
+texture = ExtResource("5_1qirt")
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 2
+0:0/0/terrains_peering_bit/bottom_side = 2
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 2
+1:0/0/terrains_peering_bit/right_side = 2
+1:0/0/terrains_peering_bit/bottom_side = 2
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 2
+2:0/0/terrains_peering_bit/right_side = 2
+2:0/0/terrains_peering_bit/bottom_side = 2
+2:0/0/terrains_peering_bit/left_side = 2
+3:0/0 = 0
+3:0/0/terrain_set = 0
+3:0/0/terrain = 2
+3:0/0/terrains_peering_bit/bottom_side = 2
+3:0/0/terrains_peering_bit/left_side = 2
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 2
+0:1/0/terrains_peering_bit/bottom_side = 2
+0:1/0/terrains_peering_bit/top_side = 2
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 2
+1:1/0/terrains_peering_bit/right_side = 2
+1:1/0/terrains_peering_bit/bottom_side = 2
+1:1/0/terrains_peering_bit/top_side = 2
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 2
+2:1/0/terrains_peering_bit/right_side = 2
+2:1/0/terrains_peering_bit/bottom_side = 2
+2:1/0/terrains_peering_bit/left_side = 2
+2:1/0/terrains_peering_bit/top_side = 2
+3:1/0 = 0
+3:1/0/terrain_set = 0
+3:1/0/terrain = 2
+3:1/0/terrains_peering_bit/bottom_side = 2
+3:1/0/terrains_peering_bit/left_side = 2
+3:1/0/terrains_peering_bit/top_side = 2
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 2
+0:2/0/terrains_peering_bit/top_side = 2
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 2
+1:2/0/terrains_peering_bit/right_side = 2
+1:2/0/terrains_peering_bit/top_side = 2
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 2
+2:2/0/terrains_peering_bit/right_side = 2
+2:2/0/terrains_peering_bit/left_side = 2
+2:2/0/terrains_peering_bit/top_side = 2
+3:2/0 = 0
+3:2/0/terrain_set = 0
+3:2/0/terrain = 2
+3:2/0/terrains_peering_bit/left_side = 2
+3:2/0/terrains_peering_bit/top_side = 2
+0:3/0 = 0
+0:3/0/terrain_set = 0
+0:3/0/terrain = 2
+1:3/0 = 0
+1:3/0/terrain_set = 0
+1:3/0/terrain = 2
+1:3/0/terrains_peering_bit/right_side = 2
+2:3/0 = 0
+2:3/0/terrain_set = 0
+2:3/0/terrain = 2
+2:3/0/terrains_peering_bit/right_side = 2
+2:3/0/terrains_peering_bit/left_side = 2
+3:3/0 = 0
+3:3/0/terrain_set = 0
+3:3/0/terrain = 2
+3:3/0/terrains_peering_bit/left_side = 2
+
 [resource]
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Grass Terrain"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 terrain_set_0/terrain_1/name = "Tiled Dirt Terrain"
 terrain_set_0/terrain_1/color = Color(0.757382, 0.147485, 0.477048, 1)
+terrain_set_0/terrain_2/name = "Fences"
+terrain_set_0/terrain_2/color = Color(0.635182, 0.275721, 0.965333, 1)
 sources/0 = SubResource("TileSetAtlasSource_c0fpt")
 sources/1 = SubResource("TileSetAtlasSource_7o8jr")
 sources/2 = SubResource("TileSetAtlasSource_io5f5")
 sources/3 = SubResource("TileSetAtlasSource_fff2b")
 sources/4 = SubResource("TileSetScenesCollectionSource_io5f5")
+sources/5 = SubResource("TileSetAtlasSource_ljitc")
