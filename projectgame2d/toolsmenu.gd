@@ -7,3 +7,12 @@ extends PanelContainer
 
 func _on_shovel_pressed() -> void:
 	ToolManager.selected(DataTypes.Tools.Shovel)
+
+
+func _on_axe_pressed() -> void:
+	ToolManager.selected(DataTypes.Tools.Axe)
+	
+
+
+func _on_watering_pressed() -> void:
+	pass # Replace with function body.
