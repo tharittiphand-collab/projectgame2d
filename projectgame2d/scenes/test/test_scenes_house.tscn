@@ -25,3 +25,7 @@ tile_set = ExtResource("2_cliv5")
 position = Vector2(-195, -345)
 tile_map_data = PackedByteArray("AAAKAAIAAgAAAAAAAQAQAAoABAAAAAAAAQA=")
 tile_set = ExtResource("2_cliv5")
+
+[node name="TileDirt" type="TileMapLayer" parent="GameTilemap"]
+position = Vector2(2, -29)
+tile_set = ExtResource("2_cliv5")
