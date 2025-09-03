@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://04udgng1qonw"]
+
+[ext_resource type="Script" uid="uid://c8dn1h1k36kic" path="res://scenes/components/hurt_component.gd" id="1_d1uqi"]
+
+[node name="HurtComponent" type="Area2D"]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("1_d1uqi")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
