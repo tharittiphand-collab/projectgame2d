@@ -5,7 +5,8 @@ enum Tools {
 	Axe,
 	Tillground,
 	Watering,
-	Plant
+	Corn,
+	Tomato
 }
 
 enum GrowthStates {

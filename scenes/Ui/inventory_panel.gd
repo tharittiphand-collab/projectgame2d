@@ -1,9 +1,10 @@
 extends PanelContainer
-@onready var log_label: Label = $MarginContainer/VBoxContainer/Logs/LogLabel
-@onready var stone_label: Label = $MarginContainer/VBoxContainer/Stone/StoneLabel
-@onready var plant_label: Label = $MarginContainer/VBoxContainer/Tomato/PlantLabel
+@onready var log_label: Label = $MarginContainer/VBoxContainer/Logs/LogsLabel
+@onready var stone_label: Label = $MarginContainer/VBoxContainer/Stone/StonesLabel
+@onready var corn_label: Label = $MarginContainer/VBoxContainer/Tomato/CornsLabel
 @onready var egg_label: Label = $MarginContainer/VBoxContainer/Egg/EggLabel
 @onready var milk_label: Label = $MarginContainer/VBoxContainer/Milk/MilkLabel
+@onready var tomato_label: Label = $MarginContainer/VBoxContainer/Tomato/TomatoLabel
 
 
 func _ready() -> void:
@@ -17,11 +18,14 @@ func on_inventory_changed() -> void:
 	if inventory.has("stone"):
 		stone_label.text = str(inventory["stone"])
 
-	if inventory.has("plant"):
-		plant_label.text = str(inventory["plant"])
+	if inventory.has("corn"):
+		corn_label.text = str(inventory["corn"])
 
 	if inventory.has("egg"):
 		egg_label.text = str(inventory["egg"])
 
 	if inventory.has("milk"):
 		milk_label.text = str(inventory["milk"])
+	
+	if inventory.has("tomato"):
+		tomato_label.text = str(inventory["tomato"])	

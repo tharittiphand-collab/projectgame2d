@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cy8kytnfbyfnc"]
+[gd_scene load_steps=11 format=3 uid="uid://cy8kytnfbyfnc"]
 
 [ext_resource type="Theme" uid="uid://cu4aaumdpt78y" path="res://scenes/Ui/game_ui_theme.tres" id="1_34mwa"]
 [ext_resource type="Texture2D" uid="uid://oktc65s3ullj" path="res://asset/ui/Basic_tools_and_meterials.png" id="2_3u076"]
@@ -22,11 +22,15 @@ region = Rect2(0, 4, 16, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6gupw"]
 atlas = ExtResource("3_8mx8w")
-region = Rect2(33, 3, 15, 12)
+region = Rect2(2, 2, 12, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mx8w"]
+atlas = ExtResource("3_8mx8w")
+region = Rect2(2, 18, 12, 13)
 
 [node name="ToolsPanel" type="PanelContainer"]
-offset_right = 26.0
-offset_bottom = 26.0
+offset_right = 171.0
+offset_bottom = 49.0
 theme = ExtResource("1_34mwa")
 theme_type_variation = &"DarkWoodPanel"
 script = ExtResource("2_8mx8w")
@@ -62,14 +66,22 @@ theme_type_variation = &"ToolButton"
 icon = SubResource("AtlasTexture_i2d6w")
 icon_alignment = 1
 
-[node name="Plant" type="Button" parent="MarginContainer/HBoxContainer"]
+[node name="Corn" type="Button" parent="MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(26, 26)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 icon = SubResource("AtlasTexture_6gupw")
 icon_alignment = 1
 
+[node name="Tomato" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(26, 26)
+layout_mode = 2
+theme_type_variation = &"ToolButton"
+icon = SubResource("AtlasTexture_8mx8w")
+icon_alignment = 1
+
 [connection signal="pressed" from="MarginContainer/HBoxContainer/ToolAxe" to="." method="_on_tool_axe_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/ToolTilling" to="." method="_on_tool_tilling_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Watering" to="." method="_on_watering_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/Plant" to="." method="_on_plant_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Corn" to="." method="_on_corn_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Tomato" to="." method="_on_tomato_pressed"]

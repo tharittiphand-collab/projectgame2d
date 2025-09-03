@@ -16,5 +16,8 @@ func _on_watering_pressed() -> void:
 	ToolManager.select_tool(DataTypes.Tools.Watering)
 
 
-func _on_plant_pressed() -> void:
-	ToolManager.select_tool(DataTypes.Tools.Plant)
+func _on_corn_pressed() -> void:
+	ToolManager.select_tool(DataTypes.Tools.Corn)
+	
+func _on_tomato_pressed() -> void:
+	ToolManager.select_tool(DataTypes.Tools.Tomato)
