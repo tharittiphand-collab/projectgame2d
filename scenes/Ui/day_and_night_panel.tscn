@@ -1,30 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://bhb0ly4cdxwcy"]
+[gd_scene load_steps=5 format=3 uid="uid://b2qbg4700iny3"]
 
-[ext_resource type="Theme" uid="uid://cu4aaumdpt78y" path="res://scenes/Ui/game_ui_theme.tres" id="1_vtt1x"]
-[ext_resource type="Script" uid="uid://ddus6j38nnb6o" path="res://scenes/Ui/day_and_night_panel.gd" id="2_fjgtr"]
+[ext_resource type="Theme" uid="uid://cu4aaumdpt78y" path="res://scenes/ui/game_ui_theme.tres" id="1_vtt1x"]
+[ext_resource type="Script" uid="uid://dk2t301wbbdyl" path="res://scenes/ui/day_and_night_panel.gd" id="2_fjgtr"]
 [ext_resource type="Texture2D" uid="uid://5nsjblwhhcyr" path="res://asset/ui/basic_ui_sprite.png" id="2_vk5ve"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fjgtr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_25t5k"]
 atlas = ExtResource("2_vk5ve")
 region = Rect2(437, 34, 7, 12)
 
 [node name="DayAndNightPanel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-size_flags_horizontal = 0
-size_flags_vertical = 0
 theme = ExtResource("1_vtt1x")
 script = ExtResource("2_fjgtr")
 
 [node name="DayPanel" type="PanelContainer" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
+layout_mode = 0
 offset_left = -80.0
 offset_bottom = 26.0
-grow_horizontal = 0
-theme_type_variation = &"DayAndNightCounter"
+theme_type_variation = &"DayAndNightCounterPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="DayPanel"]
 layout_mode = 2
@@ -37,14 +31,14 @@ theme_override_constants/margin_bottom = 3
 layout_mode = 2
 size_flags_horizontal = 4
 theme_type_variation = &"DayAndNightLabel"
-text = "Day 0"
+text = "DAY 0"
 
 [node name="TimePanel" type="PanelContainer" parent="."]
 layout_mode = 0
 offset_left = -80.0
-offset_top = 29.0
-offset_bottom = 55.0
-theme_type_variation = &"DayAndNightCounter"
+offset_top = 28.0
+offset_bottom = 54.0
+theme_type_variation = &"DayAndNightCounterPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="TimePanel"]
 layout_mode = 2
@@ -62,8 +56,8 @@ text = "00:00"
 [node name="Control" type="Control" parent="."]
 anchors_preset = 0
 offset_left = -80.0
-offset_top = 59.0
-offset_bottom = 77.0
+offset_top = 56.0
+offset_bottom = 74.0
 
 [node name="NormalSpeedButton" type="Button" parent="Control"]
 layout_mode = 0
@@ -84,7 +78,7 @@ offset_right = 4.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("AtlasTexture_fjgtr")
+texture = SubResource("AtlasTexture_25t5k")
 
 [node name="FastSpeedButton" type="Button" parent="Control"]
 layout_mode = 0
@@ -106,7 +100,7 @@ offset_right = 6.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("AtlasTexture_fjgtr")
+texture = SubResource("AtlasTexture_25t5k")
 
 [node name="TextureRect2" type="TextureRect" parent="Control/FastSpeedButton"]
 layout_mode = 1
@@ -121,16 +115,16 @@ offset_right = 1.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("AtlasTexture_fjgtr")
+texture = SubResource("AtlasTexture_25t5k")
 
-[node name="CheetahSpeedButton" type="Button" parent="Control"]
-layout_mode = 1
+[node name="CheetahFastSpeedButton2" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 54.0
 offset_right = 80.0
 offset_bottom = 18.0
 theme_type_variation = &"DayAndNightButton"
 
-[node name="TextureRect" type="TextureRect" parent="Control/CheetahSpeedButton"]
+[node name="TextureRect" type="TextureRect" parent="Control/CheetahFastSpeedButton2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -143,9 +137,9 @@ offset_right = 8.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("AtlasTexture_fjgtr")
+texture = SubResource("AtlasTexture_25t5k")
 
-[node name="TextureRect2" type="TextureRect" parent="Control/CheetahSpeedButton"]
+[node name="TextureRect2" type="TextureRect" parent="Control/CheetahFastSpeedButton2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -158,9 +152,9 @@ offset_right = 4.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("AtlasTexture_fjgtr")
+texture = SubResource("AtlasTexture_25t5k")
 
-[node name="TextureRect3" type="TextureRect" parent="Control/CheetahSpeedButton"]
+[node name="TextureRect3" type="TextureRect" parent="Control/CheetahFastSpeedButton2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -172,8 +166,8 @@ offset_top = -6.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("AtlasTexture_fjgtr")
+texture = SubResource("AtlasTexture_25t5k")
 
 [connection signal="pressed" from="Control/NormalSpeedButton" to="." method="_on_normal_speed_button_pressed"]
 [connection signal="pressed" from="Control/FastSpeedButton" to="." method="_on_fast_speed_button_pressed"]
-[connection signal="pressed" from="Control/CheetahSpeedButton" to="." method="_on_cheetah_speed_button_pressed"]
+[connection signal="pressed" from="Control/CheetahFastSpeedButton2" to="." method="_on_cheetah_fast_speed_button_2_pressed"]

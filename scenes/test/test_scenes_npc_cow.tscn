@@ -33,17 +33,17 @@ position = Vector2(-6, 5)
 navigation_polygon = SubResource("NavigationPolygon_8v004")
 navigation_layers = 2
 
-[node name="Cow" parent="." instance=ExtResource("2_u5hh5")]
+[node name="Cow" parent="Cows" instance=ExtResource("2_u5hh5")]
 position = Vector2(322, 164)
 
-[node name="Cow2" parent="." instance=ExtResource("2_u5hh5")]
+[node name="Cow2" parent="Cows" instance=ExtResource("2_u5hh5")]
 position = Vector2(365, 128)
 
-[node name="Cow3" parent="." instance=ExtResource("2_u5hh5")]
+[node name="Cow3" parent="Cows" instance=ExtResource("2_u5hh5")]
 position = Vector2(416, 171)
 
-[node name="Cow4" parent="." instance=ExtResource("2_u5hh5")]
+[node name="Cow4" parent="Cows" instance=ExtResource("2_u5hh5")]
 position = Vector2(401, 217)
 
-[node name="Cow5" parent="." instance=ExtResource("2_u5hh5")]
+[node name="Cow5" parent="Cows" instance=ExtResource("2_u5hh5")]
 position = Vector2(337, 218)

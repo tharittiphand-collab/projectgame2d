@@ -1,14 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cl4087mb3cxsl"]
+[gd_scene load_steps=5 format=3 uid="uid://cl4087mb3cxsl"]
 
-[ext_resource type="PackedScene" uid="uid://busi8jyois21v" path="res://scenes/components/day_night_cycle_component.tscn" id="1_2lquy"]
-[ext_resource type="Theme" uid="uid://cu4aaumdpt78y" path="res://scenes/Ui/game_ui_theme.tres" id="1_iif2c"]
-[ext_resource type="PackedScene" uid="uid://cy8kytnfbyfnc" path="res://scenes/Ui/tools_panel.tscn" id="2_8y2na"]
-[ext_resource type="PackedScene" uid="uid://bhb0ly4cdxwcy" path="res://scenes/Ui/day_and_night_panel.tscn" id="3_3dq7r"]
-[ext_resource type="PackedScene" uid="uid://cg708b46tpflv" path="res://scenes/Ui/inventory_panel.tscn" id="3_8y2na"]
+[ext_resource type="Theme" uid="uid://cu4aaumdpt78y" path="res://scenes/ui/game_ui_theme.tres" id="1_iif2c"]
+[ext_resource type="PackedScene" uid="uid://cy8kytnfbyfnc" path="res://scenes/ui/tools_panel.tscn" id="2_8y2na"]
+[ext_resource type="PackedScene" uid="uid://cg708b46tpflv" path="res://scenes/ui/inventory_panel.tscn" id="3_gusqm"]
+[ext_resource type="PackedScene" uid="uid://b2qbg4700iny3" path="res://scenes/ui/day_and_night_panel.tscn" id="4_gkbp4"]
 
 [node name="GameScreen" type="CanvasLayer"]
-
-[node name="DayNightCycleComponent" parent="." instance=ExtResource("1_2lquy")]
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 15
@@ -18,16 +15,17 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_iif2c")
 
-[node name="ToolsPanel" parent="MarginContainer" instance=ExtResource("2_8y2na")]
+[node name="Toolspanel" parent="MarginContainer" instance=ExtResource("2_8y2na")]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 
-[node name="DayAndNightPanel" parent="MarginContainer" instance=ExtResource("3_3dq7r")]
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="InventoryPanel" parent="MarginContainer" instance=ExtResource("3_8y2na")]
+[node name="InventoryPanel" parent="MarginContainer" instance=ExtResource("3_gusqm")]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
+
+[node name="DayAndNightPanel" parent="MarginContainer" instance=ExtResource("4_gkbp4")]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
