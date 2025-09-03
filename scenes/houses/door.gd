@@ -1,11 +1,12 @@
 extends StaticBody2D
+
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@onready var interactable_components: InteractableComponents = $InteractableComponents
+@onready var interactable_component: InteractableComponent = $InteractableComponent
 @onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 
 func _ready() -> void:
-	interactable_components.interactable_activated.connect(on_interactable_activated)
-	interactable_components.interactable_deactivated.connect(on_interactable_deactivated)
+	interactable_component.interactable_activated.connect(on_interactable_activated)
+	interactable_component.interactable_deactivated.connect(on_interactable_deactivated)
 	collision_layer = 1
 	
 

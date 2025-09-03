@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dt551gqfhvgl5" path="res://scenes/components/interactable_components.gd" id="1_rkvfb"]
 
-[node name="InteractableComponents" type="Area2D"]
+[node name="InteractableComponent" type="Area2D"]
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_rkvfb")

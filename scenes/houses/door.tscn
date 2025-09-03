@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://cfjc0gptyug62"]
 
-[ext_resource type="Script" uid="uid://dt551gqfhvgl5" path="res://scenes/components/interactable_components.gd" id="1_act2a"]
+[ext_resource type="Script" uid="uid://b6nm38ul1hck4" path="res://scenes/houses/door.gd" id="1_act2a"]
 [ext_resource type="Texture2D" uid="uid://7ecxmqgwtvyd" path="res://asset/Tilesets/Doors.png" id="1_bxi54"]
 [ext_resource type="PackedScene" uid="uid://d0e16g3fu37tg" path="res://scenes/components/interactable_components.tscn" id="3_1ugum"]
 
@@ -96,7 +96,7 @@ script = ExtResource("1_act2a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nb53x")
-animation = &"defukt"
+animation = &"opendoor"
 autoplay = "defukt"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
